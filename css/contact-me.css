@@ -1,0 +1,75 @@
+#contact-me {
+    padding: 4em;
+    border-bottom: 1px solid gray;
+}
+
+#contact-me > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6vw 3vw;
+    border-color: gray;
+    border-style: solid;
+    border-width: 0.5vw;
+    border-top: 1vw solid black;
+    margin-bottom: 4vw;
+}
+
+#contact-me button {
+    font-size: 2vw;
+    font-family: 'Lato', sans-serif;
+    display: block;
+    padding: 1.5vw 4vw;
+    border-radius: 8vw;
+    border: 1px solid rgb(3, 205, 205);
+    color: white;
+    background-color: rgb(3, 205, 205);
+    text-transform: uppercase;
+}
+
+#contact-me button:hover {
+    color: rgb(3, 205, 205);
+    background-color: white;
+}
+
+#contact-me .sns {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+#contact-me .sns li a {
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: -10000px;
+    overflow: hidden;
+}
+
+#contact-me .facebook a {
+    background-image: url(../images/facebook.png);
+}
+
+#contact-me .instargram a {
+    background-image: url(../images/instargram.png);
+}
+
+#contact-me .twitter a {
+    background-image: url(../images/twitter.png);
+}
+
+#contact-me .youtube a {
+    background-image: url(../images/youtube.png);
+}
+
+@media (max-width:1024px) {
+    #contact-me > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

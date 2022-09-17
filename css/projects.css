@@ -1,0 +1,80 @@
+#projects {
+    padding: 4em;
+    margin-bottom: 20em;
+    height: 26em;
+    background-color: rgb(154, 242, 250, 0.652);
+}
+
+#projects ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin: 2em 0;
+}
+
+#projects .card {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 25vw;
+    border-radius: 7vw;
+    overflow: hidden;
+    box-shadow: 0 2vw 3vw rgba(0, 0, 0, 0.05);
+    background-color: white;
+    z-index: 0; 
+}
+
+#projects .card:hover {
+    transform: translate3d(0, -1em, 0);
+    box-shadow: 0 0.6em 1.3em rgba(0, 0, 0, 0.25);
+}
+
+#projects .photo {
+    position: relative;
+    height: 50%; 
+    overflow: hidden;
+}
+
+#projects img {
+    top: 50%;
+    left: 0;
+    width: 100%;
+}
+#projects a {
+    color: black;
+    text-align: center;
+}
+
+#projects button {
+    position: relative;
+    padding: 1em 2em;
+    border-radius: 2vw;
+    background-color: white;
+    border: 1px solid rgb(3, 205, 205);
+    bottom: -1em;
+}
+
+@media (max-width: 1024px) {
+    #projects {
+        padding: 10vw 4vw;
+        height: 120em;
+        background-color: rgb(154, 242, 250, 0.652);
+    }
+    
+    #projects ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    #projects .card {
+        width: 100%;
+        height: 80vw;
+        border-radius: 7vw;
+        overflow: hidden;
+        box-shadow: 0 2vw 3vw rgba(0, 0, 0, 0.05);
+        background-color: #FFF;
+        z-index: 0; 
+    }
+}
