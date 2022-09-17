@@ -1,0 +1,51 @@
+#exprience {
+    padding: 4em;
+}
+
+#exprience .title {
+    border-bottom: 2px solid black;
+}
+
+#exprience .title h3 {
+    margin-bottom: 3.5vw;
+}
+
+#exprience .title p {
+    margin-bottom: 3.5vw;
+}
+
+#exprience li {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-areas: 
+        "institution course period";
+    padding: 4vw 4vw;
+    border-bottom: 1px dashed #DDD;
+}
+
+#exprience .institution {
+    grid-area: institution;
+    font-weight: 700;
+}
+
+#exprience .course {
+    grid-area: course;
+    color: gray;
+}
+
+#exprience .period {
+    grid-area: period;
+}
+
+@media (max-width: 1024px) {
+    #exprience li {
+        grid-template-areas: 
+        "institution course"
+        "institution period";
+        gap: 1.5vw;
+    }
+
+    #exprience li p {
+        font-size: 3.5vw;    
+    }
+}
